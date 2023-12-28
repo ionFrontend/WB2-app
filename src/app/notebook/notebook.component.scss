@@ -1,0 +1,38 @@
+.notebook-container {
+  padding: 20px;
+}
+
+.mat-elevation{
+  box-shadow: none;
+  border: 1px solid #e0e0e0;
+}
+
+.notebook-paginator {
+  margin-top: 20px;
+}
+
+.mat-icon-button {
+  margin-right: 4px;
+}
+
+.button-add {
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.button-reset {
+  margin-bottom: 10px;
+}
+
+.search-container {
+  margin-bottom: 20px;
+  position: absolute;
+  left: 21px;
+  top: 67px;
+  z-index: 1;
+}
+
+.table-container {
+  width: 80%;
+  margin: 0 auto;
+}

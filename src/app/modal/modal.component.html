@@ -1,0 +1,28 @@
+<form [formGroup]="form" class="modal-form">
+  <mat-form-field>
+    <input matInput placeholder="Фамилия" formControlName="lastName" required minlength="5">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Имя" formControlName="firstName" required minlength="5">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Отчество" formControlName="middleName" minlength="5">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Email" formControlName="email" required email>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Статус</mat-label>
+    <mat-select formControlName="status">
+      <mat-option value="Активен">Активен</mat-option>
+      <mat-option value="Неактивен">Неактивен</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="save()">Сохранить</button>
+  <button mat-raised-button (click)="cancel()">Отмена</button>
+</form>
